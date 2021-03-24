@@ -15,7 +15,7 @@ repositories {
 
 ```gradle
 dependencies {
-    compileOnly 'com.github.einfachBlu:console-manager:master-SNAPSHOT'
+    implementation 'com.github.einfachBlu:console-manager:master-SNAPSHOT'
 }
 ```
 
