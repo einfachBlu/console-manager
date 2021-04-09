@@ -53,11 +53,8 @@ public final class ConsoleCommandHandler implements ConsoleInputReader {
 
                   if (this.customWaiting) {
                     this.customLine = input;
-                    System.out.println("CUSTOM CALLBACK RUN");
                     continue;
                   }
-
-                  System.out.println("RUN COMMAND");
 
                   String line = input;
                   this.getThreadPool().execute(() -> this.handleCommandLine(line));

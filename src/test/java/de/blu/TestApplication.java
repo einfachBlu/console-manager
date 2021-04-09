@@ -51,6 +51,16 @@ public final class TestApplication {
                   System.out.println("Amazing! last input was: " + age);
                 }
               });
+      consoleCommandHandler.registerCommand(
+              "help",
+              new String[] {"?"},
+              new CommandExecutor() {
+
+                @Override
+                public void execute(String label, String[] args) {
+                  System.out.println("Command executed!");
+                }
+              });
     } catch (IOException e) {
       e.printStackTrace();
     }
